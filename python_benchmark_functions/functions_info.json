@@ -1,0 +1,114 @@
+{
+  "ACKLEY": {
+    "minima": {
+      "*": [
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "suggested bounds": {
+      "lower": -32.768,
+      "upper": 32.768
+    }
+  },
+  "SCHAFFER": {
+    "minima": {
+      "2": [
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "suggested bounds": {
+      "lower": -100,
+      "upper": 100
+    }
+  },
+  "SCHWEFEL": {
+    "minima": {
+      "*": [
+        [
+          420.9687,
+          420.9687
+        ]
+      ]
+    },
+    "suggested bounds": {
+      "lower": -500.0,
+      "upper": 500.0
+    }
+  },
+  "EASOM": {
+    "minima": {
+      "2": [
+        [
+          3.141592653589793,
+          3.141592653589793
+        ]
+      ]
+    },
+    "suggested bounds": {
+      "lower": -100,
+      "upper": 100
+    }
+  },
+  "GOLDSTEIN AND PRICE": {
+    "minima": {
+      "2": [
+        [
+          0.0,
+          -1.0
+        ]
+      ]
+    },
+    "suggested bounds": {
+      "lower": -2,
+      "upper": 2
+    }
+  },
+  "RASTRIGIN": {
+    "minima": {
+      "*": [
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "suggested bounds": {
+      "lower": -5.12,
+      "upper": 5.12
+    }
+  },
+  "HYPERSPHERE": {
+    "minima": {
+      "*": [
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "suggested bounds": {
+      "lower": -5.0,
+      "upper": 5.0
+    }
+  },
+  "MARTIN AND GADDY": {
+    "minima": {
+      "2": [
+        [
+          5.0,
+          5.0
+        ]
+      ]
+    },
+    "suggested bounds": {
+      "lower": -20,
+      "upper": 20
+    }
+  }
+}

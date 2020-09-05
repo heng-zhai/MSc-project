@@ -1,0 +1,47 @@
+EnhancedBA {
+    Initialise_solution()        
+    do until stopping_condition=True
+        Waggle_dance()
+        for i = 1,...,nb
+            Local_search(current_sites[i], n_recruits)
+        Global_search()
+}
+
+Initialise_solution() {
+    place random ns scouts in search space
+    rank scouts in descend order based on the fitness
+    pick first nb sites as current sites
+    pick first one site as current best solution 
+}
+
+Waggle_dance() {
+    for i = 1,...,nr 
+        random pick two sites from current sites
+        evaluate fitness of these two sites 
+        append the index of best one to recruits choices list
+    for j = 1,...,nb
+        count the number of recruited bees that choose current_sites[j] as n_recruits
+}
+
+Local_search(current_sites[i], n_recruits) {
+    if current_sites[i].shrinkTimes == stlim
+        place random n_recruits scouts in search space
+        replace the scout in current_sites[i] with the best random scout
+    else
+        place n_recruits inside neighbourhood
+        pick the best recruit then compare with the scout in current_sites[i]
+        if fitness of best recruit > fitness of scout
+            recruit becomes the new scout in current_sites[i]
+            set shrinkTimes to 0
+        else
+            shrinkTimes += 1
+            patchsize of current_sites[i] = 0.8 * patchsize of current_sites[i]
+}
+
+Global_search() {
+    add ns - nb random scouts in search space to current_sites
+    rank scouts in descend order based on the fitness
+    pick first nb sites as current sites
+    if fitness of first one site > fitness of current best solution
+        first one site becomes the new best solution
+}
