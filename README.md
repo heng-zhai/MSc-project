@@ -32,7 +32,7 @@ Because the process of neighbourhood shrinking and site abandonment have been wi
 
 ## Contents of the repository
 
-This git repository contains a main python file for the implementation of enhanced bees algorithm, a folder belonging to the benchmark functions (*provided by supervisor*), a txt file for pseudo code, a README markdown file, a python file for testing (*numpy* library required), a python file for visualization (*matplotlib*, *pandas* libraries required), a jupyter notebook for usage (*matplotlib* library required) and a csv file for storing the results of testing.
+This git repository contains a main python file for the implementation of enhanced bees algorithm, a folder belonging to the benchmark functions (*provided by supervisor*), a txt file for pseudo code, a README markdown file, a python file for testing (*pandas* library required), a python file for visualization (*numpy*, *matplotlib* libraries required), a jupyter notebook for usage (*matplotlib* library required) and a csv file for storing the results of testing.
 
 ## Usage
 
